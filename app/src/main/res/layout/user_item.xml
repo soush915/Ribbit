@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/userImageView"
+        android:src="@drawable/avatar_empty"
+        android:contentDescription="User avatar"
+        style="@style/GridImage" />
+
+    <ImageView
+        android:id="@+id/checkImageView"
+        android:src="@drawable/avatar_selected"
+        android:contentDescription="User checkmark"
+        style="@style/GridImage"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:id="@+id/nameLabel"
+        android:maxLines="2"
+        android:padding="4dp"
+        android:layout_below="@+id/userImageView"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
